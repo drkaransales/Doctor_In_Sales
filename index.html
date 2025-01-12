@@ -5,87 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor in Sales</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .header {
-            background: url('background-image.jpg') no-repeat center center/cover;
-            color: white;
-            padding: 2em 0;
-            text-align: center;
-        }
-        .logo {
-            max-width: 150px;
-            margin: 0 auto 1em;
-        }
-        .container {
-            padding: 1em 2em;
-        }
-        .service {
-            margin-bottom: 2em;
-        }
-        .contact {
-            background-color: #f4f4f4;
-            padding: 1em;
-            margin-top: 2em;
-            text-align: center;
-        }
-        .social-links a {
-            margin: 0 10px;
-            color: #333;
-            text-decoration: none;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #003366; color: white; padding: 40px; text-align: center; }
+        header h1 { font-size: 2.5em; margin: 0; animation: fadeIn 2s ease-out; }
+        header p { font-size: 1.2em; margin: 10px 0 0; animation: fadeIn 2s ease-out 1s; }
+        nav { background-color: #f4f4f4; padding: 10px; text-align: center; animation: slideIn 1s ease-out; }
+        nav a { margin: 0 15px; text-decoration: none; color: #003366; font-size: 1.1em; }
+        section { padding: 40px; background-color: white; margin: 10px 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        section h2 { font-size: 2em; color: #003366; text-align: center; animation: slideInUp 1s ease-out; }
+        .service { margin: 20px 0; display: flex; justify-content: space-between; padding: 20px; background-color: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); animation: fadeIn 2s ease-out 0.5s; }
+        .service h3 { color: #003366; font-size: 1.5em; }
+        .service p { font-size: 1.1em; color: #666; line-height: 1.6; flex: 1; margin-right: 20px; }
+        .service img { width: 100%; height: auto; max-width: 400px; transition: transform 0.3s ease; }
+        .service img:hover { transform: scale(1.05); }
+        footer { background-color: #003366; color: white; padding: 20px; text-align: center; font-size: 0.9em; }
+        footer p { margin: 5px 0; }
+        @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+        @keyframes slideIn { 0% { transform: translateY(-100px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+        @keyframes slideInUp { 0% { transform: translateY(100px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="logo.jpg" alt="Doctor in Sales Logo" class="logo">
+
+    <header>
         <h1>Doctor in Sales</h1>
-        <p>Where Medicine Meets Mastery</p>
-    </div>
+        <p>Your Partner for Sales, Growth, and Branding in Healthcare</p>
+    </header>
 
-    <div class="container">
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="services">
         <h2>Our Services</h2>
-
         <div class="service">
-            <h3>Customized Sales Training Programs</h3>
-            <p><strong>Objective:</strong> To equip healthcare professionals and businesses with tailored sales strategies for increased revenue and client acquisition.</p>
-            <p>Description: This service offers personalized sales training for healthcare professionals and teams...</p>
+            <div>
+                <h3>Sales Process Optimization</h3>
+                <p>Maximize your sales team's performance by refining processes for improved efficiency. From lead generation to closing deals, we analyze and optimize each step to ensure better conversion rates and consistent growth.</p>
+            </div>
+            <div>
+                <img src="path_to_image.jpg" alt="Sales Optimization">
+            </div>
         </div>
 
         <div class="service">
-            <h3>Lead Generation Strategies</h3>
-            <p><strong>Objective:</strong> To equip healthcare professionals and organizations with effective strategies...</p>
+            <div>
+                <h3>Personal Branding Workshops</h3>
+                <p>In the competitive healthcare sector, standing out is key. Our workshops guide you in crafting a personal brand that resonates with your target audience, enhancing your professional reputation and helping you build lasting relationships.</p>
+            </div>
+            <div>
+                <img src="path_to_image.jpg" alt="Personal Branding">
+            </div>
         </div>
 
         <div class="service">
-            <h3>Personal Branding Workshops</h3>
-            <p><strong>Objective:</strong> To help healthcare professionals build a powerful personal brand...</p>
+            <div>
+                <h3>Lead Generation Strategies</h3>
+                <p>Attract qualified leads using data-driven strategies tailored to your business model. We develop custom campaigns to target the right audience, driving high-quality prospects and boosting your sales pipeline.</p>
+            </div>
+            <div>
+                <img src="path_to_image.jpg" alt="Lead Generation">
+            </div>
         </div>
+    </section>
 
-        <div class="service">
-            <h3>Sales Coaching for Healthcare Professionals</h3>
-            <p><strong>Objective:</strong> To provide personalized coaching for healthcare professionals...</p>
-        </div>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Doctor in Sales was founded to bridge the gap between healthcare professionals and the commercial side of the industry. We provide personalized sales training, coaching, and strategies to help you grow your business in the healthcare sector. Whether you are looking to enhance your personal brand or optimize your sales pipeline, we offer tailored solutions to meet your needs.</p>
+    </section>
 
-        <div class="service">
-            <h3>Sales Process Optimization Consulting</h3>
-            <p><strong>Objective:</strong> To streamline and enhance the sales process for healthcare professionals...</p>
-        </div>
-    </div>
-
-    <div class="contact">
+    <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:doctorsinsales@gmail.com">doctorsinsales@gmail.com</a></p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/company/doctor-in-sales/?lipi=urn%3Ali%3Apage%3Ad_flagship3_notifications%3Bp%2FSe1kJ%2BRvC%2BPLCt6a0N2A%3D%3D" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/doctorinsales/?utm_source=ig_web_button_share_sheet" target="_blank">Instagram</a>
-            <a href="https://x.com/DoctorInSales" target="_blank">Twitter</a>
-            <a href="#">YouTube (Coming Soon)</a>
-        </div>
-    </div>
+        <p>If you're ready to elevate your sales and personal brand, reach out to us today!</p>
+        <p>Email: info@doctorinsales.com | Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Doctor in Sales. All rights reserved.</p>
+        <p>Website designed by [Your Name]</p>
+    </footer>
+
 </body>
 </html>
