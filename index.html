@@ -7,19 +7,6 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #FFFDD0; }
 
-        /* Styling for the logo container */
-        .logo-container {
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-
-        .logo-container img {
-            max-width: 100%;
-            height: auto;
-            max-height: 150px;
-        }
-
         .social-media {
             text-align: center;
             padding: 20px;
@@ -32,7 +19,7 @@
 
         header {
             background-color: #4682B4;
-            color: cream;
+            color: white;
             padding: 40px;
             text-align: center;
         }
@@ -41,12 +28,6 @@
             font-size: 2.5em;
             margin: 0;
             animation: fadeIn 2s ease-out;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin: 10px 0 0;
-            animation: fadeIn 2s ease-out 1s;
         }
 
         nav {
@@ -65,7 +46,7 @@
 
         section {
             padding: 40px;
-            background-color: cream;
+            background-color: #FFFDD0;
             margin: 10px 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -82,22 +63,8 @@
             display: flex;
             justify-content: space-between;
             padding: 20px;
-            background-color: cream;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             animation: fadeIn 2s ease-out 0.5s;
-        }
-
-        .service h3 {
-            color: #4682B4;
-            font-size: 1.5em;
-        }
-
-        .service p {
-            font-size: 1.1em;
-            color: #666;
-            line-height: 1.6;
-            flex: 1;
-            margin-right: 20px;
         }
 
         .service img {
@@ -112,24 +79,19 @@
 
         footer {
             background-color: #4682B4;
-            color: cream;
+            color: white;
             padding: 20px;
             text-align: center;
-            font-size: 0.9em;
         }
 
-        footer p {
-            margin: 5px 0;
+        .footer-logo {
+            max-width: 50px;
+            height: auto;
         }
 
         @keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
-        }
-
-        @keyframes slideIn {
-            0% { transform: translateY(-100px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
         }
 
         @keyframes slideInUp {
@@ -140,7 +102,7 @@
 </head>
 <body>
     <header>
-        <h1><img src="img/Logo.jpg" alt="Doctor in Sales Logo"> Doctor in Sales - Where Medicine Meets Mastery</h1>
+        <h1>Doctor in Sales - Where Medicine Meets Mastery</h1>
     </header>
 
     <nav>
@@ -154,20 +116,33 @@
         <div class="service">
             <div>
                 <h3>Customised Sales Training Program</h3>
-                <p>Equip healthcare professionals with tailored sales strategies for increased revenue and client acquisition.</p>
+                <p>To equip healthcare professionals and businesses with tailored sales strategies for increased revenue and client acquisition.</p>
+                <p>Ideal For: Healthtech, Hospital, Pharmaceutical, Medical Device companies seeking to upskill their team.</p>
             </div>
+            <img src="img/Training.png" alt="Corporate Trainings">
+        </div>
+
+        <div class="service">
             <div>
-                <img src="img/Training.png" alt="Corporate Trainings">
+                <h3>Institutional Deals and Corporate Tie-ups</h3>
+                <p>Our goal is to help healthcare businesses expand their market reach and secure high-value contracts through strategic deals.</p>
             </div>
+            <img src="img/Tieup.jpg" alt="Deals on Commissions">
+        </div>
+
+        <div class="service">
+            <div>
+                <h3>Sales Process Optimization Consulting</h3>
+                <p>To streamline and enhance the sales process for healthcare professionals and organizations, leading to improved efficiency.</p>
+            </div>
+            <img src="img/Optimization.jpg" alt="Sales Funnel Analysis">
         </div>
     </section>
 
     <section id="about">
         <h2>About Us</h2>
         <p>Doctor in Sales was founded to bridge the gap between healthcare professionals and the commercial side.</p>
-        <div>
-            <img src="img/Founder.jpg" alt="Dr.Karan Gupta" style="width:300px; height:300px;">
-        </div>
+        <img src="img/Founder.jpg" alt="Dr. Karan Gupta" style="width:300px; height:300px;">
     </section>
 
     <section id="contact">
@@ -183,6 +158,7 @@
 
     <footer>
         <p>&copy; 2025 Doctor in Sales. All rights reserved.</p>
+        <img src="img/Logo.jpg" alt="Doctor in Sales Logo" class="footer-logo">
     </footer>
 </body>
 </html>
