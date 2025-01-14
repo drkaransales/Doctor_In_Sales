@@ -21,7 +21,6 @@
             padding: 40px;
             text-align: center;
             color: white;
-            animation: fadeIn 2s ease-out;
         }
 
         header h1 {
@@ -63,7 +62,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #f5f5f5;
+            background: #FAF9F6;
             border-radius: 15px;
             padding: 20px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -79,11 +78,21 @@
             border-radius: 15px;
             width: 200px;
             height: auto;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
 
         .service p {
             font-size: 1.1em;
+        }
+
+        #about {
+            background: #FAF9F6;  /* Cream background for improved readability */
+            color: #000080;
+            padding: 60px;
+            border-top: 5px solid #000080;
+        }
+
+        #about p {
+            font-size: 1.2em;
         }
 
         .social-media {
@@ -112,7 +121,10 @@
             text-align: center;
         }
 
-        /* Animations */
+        footer img {
+            width: 50px;
+        }
+
         @keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
@@ -185,7 +197,7 @@
     <section id="about">
         <h2>About Us</h2>
         <img src="img/Founder.jpg" alt="Dr. Karan Gupta" style="width:250px; border-radius:20px;">
-        <p>Doctor in Sales was founded to bridge the gap between healthcare professionals and the commercial side.</p>
+        <p><strong>Doctor in Sales</strong> was founded to bridge the gap between healthcare professionals and the commercial side of the industry. Our mission is to empower healthcare businesses with strategic sales solutions and professional growth tools.</p>
     </section>
 
     <section id="contact">
@@ -206,10 +218,9 @@
 
     <footer>
         <p>&copy; 2025 Doctor in Sales. All rights reserved.</p>
-        <img src="img/Logo.jpg" alt="Doctor in Sales Logo" class="footer-logo" style="width:50px;">
+        <img src="img/Logo.jpg" alt="Doctor in Sales Logo">
     </footer>
 
-    <!-- JavaScript for Smooth Scroll -->
     <script>
         document.querySelectorAll('nav a').forEach(link => {
             link.addEventListener('click', function(event) {
