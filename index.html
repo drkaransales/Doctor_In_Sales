@@ -6,6 +6,7 @@
     <title>Doctor in Sales</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
     <style>
+        /* Global Styling */
         body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
@@ -13,6 +14,12 @@
             background: linear-gradient(135deg, #000080 40%, #0000A0 100%);
             color: #333;
             line-height: 1.6;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
 
         header {
@@ -24,7 +31,6 @@
 
         header h1 {
             font-size: 3em;
-            letter-spacing: 2px;
         }
 
         nav {
@@ -51,9 +57,11 @@
             color: #000080;
         }
 
+        /* Service Section Styling */
         .service {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
             background: #FAF9F6;
             border-radius: 15px;
@@ -63,20 +71,30 @@
 
         .service img {
             border-radius: 15px;
-            width: 200px;
+            width: 100%;
+            max-width: 300px;
         }
 
+        /* About Us Section Styling */
         #about {
             background: #FAF9F6;
-            color: #000080;
             padding: 60px;
+            text-align: center;
         }
 
-        #about a {
-            color: #000080;
-            font-weight: bold;
+        #about img {
+            border-radius: 15px;
+            max-width: 100%;
+            height: auto;
         }
 
+        #about p, #about ul {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Contact Section Styling */
         #contact {
             background: #FAF9F6;
             padding: 50px;
@@ -96,6 +114,7 @@
             color: #000080;
         }
 
+        /* Footer Styling */
         footer {
             padding: 20px;
             background: #000080;
@@ -104,7 +123,28 @@
         }
 
         footer img {
-            width: 50px;
+            max-width: 100px;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .service {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #about img {
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -131,7 +171,7 @@
                 <h3>Customized Sales Training Program</h3>
                 <p>Equip healthcare professionals with customized sales strategies to boost revenue and client acquisition.</p>
             </div>
-            <img src="img/Training.png" alt="Training Image">
+            <img src="./img/Training.png" alt="Training Image">
         </div>
 
         <div class="service">
@@ -139,7 +179,7 @@
                 <h3>Institutional Deals and Corporate Tie-ups</h3>
                 <p>Helping healthcare businesses expand through high-value institutional contracts.</p>
             </div>
-            <img src="img/Tieup.jpg" alt="Corporate Tie-ups">
+            <img src="./img/Tieup.jpg" alt="Corporate Tie-ups">
         </div>
 
         <div class="service">
@@ -147,17 +187,17 @@
                 <h3>Sales Process Optimization Consulting</h3>
                 <p>Streamlining the sales process for healthcare organizations to improve efficiency.</p>
             </div>
-            <img src="img/Optimization.jpg" alt="Optimization Image">
+            <img src="./img/Optimization.jpg" alt="Optimization Image">
         </div>
     </section>
 
     <!-- About Us Section -->
     <section id="about">
         <h2>About Us</h2>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 30px;">
-            <img src="img/Founder.jpg" alt="Dr. Karan Gupta" style="width: 250px; border-radius: 15px;">
-            <div style="text-align: left;">
-                <p><strong>Dr. Karan Gupta</strong> is the founder of <strong>Doctor in Sales</strong>, a pioneering platform dedicated to bridging the gap between healthcare and the commercial sector.</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px;">
+            <img src="./img/Founder.jpg" alt="Dr. Karan Gupta">
+            <div>
+                <p><strong>Dr. Karan Gupta</strong> is the founder of <strong>Doctor in Sales</strong>, a platform dedicated to bridging the gap between healthcare and the commercial sector.</p>
                 <ul>
                     <li>Experienced Dentist turned Sales Expert.</li>
                     <li>Sales training, institutional deals, and process optimization specialist.</li>
@@ -187,7 +227,7 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Doctor in Sales. All rights reserved.</p>
-        <img src="img/Logo.jpg" alt="Doctor in Sales Logo">
+        <img src="./img/Logo.jpg" alt="Doctor in Sales Logo">
     </footer>
 
 </body>
