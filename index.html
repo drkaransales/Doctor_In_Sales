@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor in Sales</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -40,11 +39,6 @@
             color: #000080;
             font-weight: bold;
             font-size: 1.2em;
-            transition: color 0.3s ease-in-out;
-        }
-
-        nav a:hover {
-            color: #333;
         }
 
         section {
@@ -55,7 +49,6 @@
         section h2 {
             font-size: 2.5em;
             color: #000080;
-            margin-bottom: 20px;
         }
 
         .service {
@@ -65,38 +58,28 @@
             background: #FAF9F6;
             border-radius: 15px;
             padding: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             margin-bottom: 20px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .service:hover {
-            transform: scale(1.05);
         }
 
         .service img {
             border-radius: 15px;
             width: 200px;
-            height: auto;
-        }
-
-        .service p {
-            font-size: 1.1em;
         }
 
         #about {
-            background: #FAF9F6;  /* Cream background for improved readability */
+            background: #FAF9F6;
             color: #000080;
             padding: 60px;
-            border-top: 5px solid #000080;
         }
 
-        #about p {
-            font-size: 1.2em;
+        #about a {
+            color: #000080;
+            font-weight: bold;
         }
 
-        .social-media {
-            margin-top: 20px;
+        #contact {
+            background: #FAF9F6;
+            padding: 50px;
         }
 
         .social-media a {
@@ -106,7 +89,6 @@
             background: #000080;
             color: white;
             border-radius: 8px;
-            transition: background 0.3s ease;
         }
 
         .social-media a:hover {
@@ -123,16 +105,6 @@
 
         footer img {
             width: 50px;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        @keyframes slideIn {
-            0% { transform: translateY(50px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
@@ -158,12 +130,6 @@
             <div>
                 <h3>Customized Sales Training Program</h3>
                 <p>Equip healthcare professionals with customized sales strategies to boost revenue and client acquisition.</p>
-                <ul>
-                    <li>Training Notes</li>
-                    <li>PPT Deck</li>
-                    <li>Sales Exercises</li>
-                    <li>Training Refreshers</li>
-                </ul>
             </div>
             <img src="img/Training.png" alt="Training Image">
         </div>
@@ -172,12 +138,6 @@
             <div>
                 <h3>Institutional Deals and Corporate Tie-ups</h3>
                 <p>Helping healthcare businesses expand through high-value institutional contracts.</p>
-                <ul>
-                    <li>Institutional Targeting</li>
-                    <li>Deal Structuring</li>
-                    <li>Negotiation Management</li>
-                    <li>Sales Pipeline Management</li>
-                </ul>
             </div>
             <img src="img/Tieup.jpg" alt="Corporate Tie-ups">
         </div>
@@ -186,12 +146,6 @@
             <div>
                 <h3>Sales Process Optimization Consulting</h3>
                 <p>Streamlining the sales process for healthcare organizations to improve efficiency.</p>
-                <ul>
-                    <li>Sales Funnel Design</li>
-                    <li>CRM Setup Guide</li>
-                    <li>Sales Scripts</li>
-                    <li>Practical Exercises</li>
-                </ul>
             </div>
             <img src="img/Optimization.jpg" alt="Optimization Image">
         </div>
@@ -200,29 +154,27 @@
     <!-- About Us Section -->
     <section id="about">
         <h2>About Us</h2>
-        <div style="display: flex; align-items: center; justify-content: center; gap: 30px;">
-            <img src="img/Founder.jpg" alt="Dr. Karan Gupta" style="width:250px; border-radius:20px;">
-            <div style="text-align: left; max-width: 600px;">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 30px;">
+            <img src="img/Founder.jpg" alt="Dr. Karan Gupta" style="width: 250px; border-radius: 15px;">
+            <div style="text-align: left;">
                 <p><strong>Dr. Karan Gupta</strong> is the founder of <strong>Doctor in Sales</strong>, a pioneering platform dedicated to bridging the gap between healthcare and the commercial sector.</p>
                 <ul>
                     <li>Experienced Dentist turned Sales Expert.</li>
-                    <li>Specializes in sales training, institutional deals, and process optimization for healthcare businesses.</li>
-                    <li>Collaborated with leading healthtech, hospital, pharmaceutical, and medical device companies.</li>
-                    <li>Focus on empowering professionals with tailored sales strategies for growth.</li>
+                    <li>Sales training, institutional deals, and process optimization specialist.</li>
+                    <li>Empowering professionals with tailored strategies for business growth.</li>
                 </ul>
-                <p>Explore more of my work: <a href="https://yourportfoliolink.com" target="_blank" style="color: #000080; font-weight: bold;">View Portfolio</a></p>
+                <p><a href="https://thread-morning-22a.notion.site/Hey-I-m-Dr-Karan-Gupta-4b5ce5f255074055a568c6c2e7fa94a0" target="_blank">View My Portfolio</a></p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" style="background: #FAF9F6; padding: 50px;">
+    <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: doctorsinsales@gmail.com or drkaransales@gmail.com</p>
         
-        <!-- Google Form for Sign-ups -->
-        <p>Sign up for updates here:</p>
-        <a href="https://docs.google.com/forms/d/e/YourGoogleFormLink" target="_blank" class="social-media">Sign Up Here</a>
+        <!-- Google Forms Link for Sign-ups -->
+        <p>Sign up for our services: <a href="https://forms.gle/56FyqFJbHc3ueswKA" target="_blank" class="social-media">Sign Up Here</a></p>
         
         <div class="social-media">
             <p>Follow us on:</p>
@@ -237,17 +189,6 @@
         <p>&copy; 2025 Doctor in Sales. All rights reserved.</p>
         <img src="img/Logo.jpg" alt="Doctor in Sales Logo">
     </footer>
-
-    <script>
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 
 </body>
 </html>
